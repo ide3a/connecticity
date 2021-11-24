@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  connecticity:
+    image: "ide3a/connecticity:latest"
+    volumes:
+      - ./Challenge_Flood_the_SWMM:/connecticity/client/Challenge_Flood_the_SWMM
+      - ./Challenge_Hydro_Privacy:/connecticity/client/Challenge_Hydro_Privacy
+      - ./Challenge_Resilient_Edge:/connecticity/client/Challenge_Resilient_Edge
+      - ./Challenge_Traffic_Monitoring:/connecticity/client/Challenge_Traffic_Monitoring
+    ports:
+      - "8888:8888"
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+      JUPYTER_TOKEN: "smart_city_hackathon"
+    entrypoint: sh -c 'jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root'

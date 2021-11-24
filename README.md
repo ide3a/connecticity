@@ -1,13 +1,14 @@
 # ConnectiCity
 
-To run the Docker container:
+To run the Docker container based on the image from Docker hub:
 ```
-docker run -it -v $(pwd)/eclipse-mosaic-21.1:/mosaic -p 8888:8888 ide3a/connecticity /bin/bash
+docker compose up
 ```
 
-Within the container run:
-`jupyter lab --ip="0.0.0.0" --allow-root`
-
+To open the jupyter hub in your brower go to:
+```
+localhost:8888/lab?token=smart_city_hackathon
+```
 
 For creating the client symlinks for the Mosaic scenario run:
 ```
