@@ -10,7 +10,6 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
       apt-get install -y unzip cmake wget
 
-
 # Install Python 3.8
 # ------------------------------------------------------------------------------
 RUN apt-get update \
@@ -19,11 +18,6 @@ RUN apt-get update \
   && ln -s /usr/bin/python3 python \
   && pip3 --no-cache-dir install --upgrade pip \
   && rm -rf /var/lib/apt/lists/*
-
-# Install Python libraries
-# ------------------------------------------------------------------------------
-COPY requirements.txt /.
-RUN  python3 -m pip install -r /requirements.txt
 
 # Install OpenJDK-11
 # ------------------------------------------------------------------------------
@@ -48,6 +42,11 @@ RUN unzip swmm51015_engine.zip && \
       cd swmm51015_engine/build && \
       cmake .. && \
       cmake --build . --config Release
+
+# Install Python libraries
+# ------------------------------------------------------------------------------
+COPY requirements.txt /.
+RUN  python3 -m pip install -r /requirements.txt
 
 # Install Jupyter Lab
 # ------------------------------------------------------------------------------
