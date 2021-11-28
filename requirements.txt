@@ -12,9 +12,10 @@ SALib==1.4.5
 swmmio==0.4.8
 
 
-# challenge 2
+# Resilient Edge
 # ------------------------------------------------------------------------------
-
+leafsim
+pybamm
 
 
 # challenge 3
