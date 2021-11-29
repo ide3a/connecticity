@@ -5,10 +5,8 @@ eclipse-mosaic-21.1/logs
 
 Challenge_Resilient_Edge/aux/*
 
-Challenge_Flood_the_SWMM/*
 Challenge_Hydro_Privacy/*
 Challenge_Traffic_Monitoring/*
 
-!Challenge_Flood_the_SWMM/.gitkeep
 !Challenge_Hydro_Privacy/.gitkeep
 !Challenge_Traffic_Monitoring/.gitkeep
