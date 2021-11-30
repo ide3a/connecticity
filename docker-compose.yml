@@ -3,10 +3,10 @@ services:
   connecticity:
     image: "ide3a/connecticity:latest"
     volumes:
-      - ./Challenge_Flood_the_SWMM:/connecticity/client/Challenge_Flood_the_SWMM
-      - ./Challenge_Hydro_Privacy:/connecticity/client/Challenge_Hydro_Privacy
-      - ./Challenge_Resilient_Edge:/connecticity/client/Challenge_Resilient_Edge
-      - ./Challenge_Traffic_Monitoring:/connecticity/client/Challenge_Traffic_Monitoring
+      - ./flood_the_swmm:/connecticity/client/flood_the_swmm
+      - ./hydro_privacy:/connecticity/client/hydro_privacy
+      - ./resilient_edge:/connecticity/client/resilient_edge
+      - ./traffic_monitoring:/connecticity/client/traffic_monitoring
     ports:
       - "8888:8888"
     environment:
