@@ -7,6 +7,3 @@ eclipse-mosaic-21.1/logs
 
 resilient_edge/aux/*
 
-traffic_monitoring/*
-
-!traffic_monitoring/.gitkeep
