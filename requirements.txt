@@ -6,7 +6,7 @@ matplotlib==3.4.2
 plotly==5.3.1
 seaborn
 
-# challenge 1
+# Flood the SWMM
 # ------------------------------------------------------------------------------
 SALib==1.4.5
 swmmio==0.4.8
@@ -18,11 +18,10 @@ leafsim
 pybamm
 
 
-# challenge 3
+# Traffic Monitoring
 # ------------------------------------------------------------------------------
 
 
-
-# challenge 4
+# Hydro Privacy
 # ------------------------------------------------------------------------------
-
+# This challenge has its own requirements.txt

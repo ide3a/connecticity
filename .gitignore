@@ -1,3 +1,5 @@
+.DS_Store
+__pycache__
 .idea
 .ipynb_checkpoints
 
@@ -5,8 +7,6 @@ eclipse-mosaic-21.1/logs
 
 Challenge_Resilient_Edge/aux/*
 
-Challenge_Hydro_Privacy/*
 Challenge_Traffic_Monitoring/*
 
-!Challenge_Hydro_Privacy/.gitkeep
 !Challenge_Traffic_Monitoring/.gitkeep

@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# --- Experiment configurations --------------------------------------------------------------------
+
+# --- Data configurations --------------------------------------------------------------------------
+
+# which data set to use
+dataset:  pySTREaM_ts_2M_2P.csv
+
+features:
+- Duration
+- Volume
+- Peak
+- Mode
+- Hour
+
+target:
+- Label
+
+train_size: -1 # size training data to be used (set = -1 for full dataset; other values for fast debugging)
+frac_tst: 0.25
+smote_kneighbors: 1
+
+
+# --- Validation configuration ---------------------------------------------------------------------
+
+# specify how many folds to use for cross-validation
+n-folds: 5
+
+
+# --- Model configuration --------------------------------------------------------------------------
+
+# specify one or multiple classification models (RandomForest, LightGBM, XGBoost, ANN):
+algorithm:
+- LGBMClassifier
+
+
+# set hyperparameters for selected model(s)
+hyperParams:
+    LGBMClassifier:
+        max_depth:
+            - 3
+            - 5
+            - 7
+            - 9
+        learning_rate:
+            - 0.001
+            - 0.01
+            - 0.1
+            - 0.16
+            - 0.32
+        n_estimators:
+            - 100
+            - 200
+            - 1000
+        n_jobs:
+            - -1

@@ -48,9 +48,9 @@ RUN unzip swmm51015_engine.zip && \
 COPY requirements.txt /.
 RUN  python3 -m pip install -r /requirements.txt
 
-# Install Jupyter Lab
-# ------------------------------------------------------------------------------
-RUN pip install jupyterlab
+# Temporary: Install hydro privacy dependencies
+COPY Challenge_Hydro_Privacy/requirements.txt /requirements_hydro_privacy.txt
+RUN  python3 -m pip install -r /requirements_hydro_privacy.txt
 
 WORKDIR /connecticity/client
 
