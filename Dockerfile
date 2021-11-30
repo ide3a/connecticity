@@ -49,8 +49,8 @@ COPY requirements.txt /.
 RUN  python3 -m pip install -r /requirements.txt
 
 # Temporary: Install hydro privacy dependencies
-COPY Challenge_Hydro_Privacy/requirements.txt /requirements_hydro_privacy.txt
-RUN  python3 -m pip install -r /requirements_hydro_privacy.txt
+COPY hydro_privacy/requirements.txt /hydro_privacy_requirements.txt
+RUN  python3 -m pip install -r /hydro_privacy_requirements.txt
 
 WORKDIR /connecticity/client
 

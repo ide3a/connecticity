@@ -5,8 +5,8 @@ __pycache__
 
 eclipse-mosaic-21.1/logs
 
-Challenge_Resilient_Edge/aux/*
+resilient_edge/aux/*
 
-Challenge_Traffic_Monitoring/*
+traffic_monitoring/*
 
-!Challenge_Traffic_Monitoring/.gitkeep
+!traffic_monitoring/.gitkeep
