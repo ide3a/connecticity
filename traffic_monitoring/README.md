@@ -3,6 +3,7 @@
 To start the simulation just execute the following command:
 
 ```bash
+cd traffic_monitoring
 ./run-scenario.sh
 ```
 
