@@ -40,7 +40,6 @@
       "maxTime": 62208000.0,
       "targetFlow": 3600,
       "spawningMode": "POISSON",
-      "maxNumberVehicles": 3000,
       "laneSelectionMode": "FREE",
       "departSpeedMode": "MAXIMUM",
       "deterministic": true,
